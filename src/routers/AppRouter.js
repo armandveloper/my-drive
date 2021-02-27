@@ -7,7 +7,7 @@ import TrashScreen from '../screens/TrashScreen';
 
 function AppRouter() {
 	return (
-		<Router>
+		<Router basename="/my-drive">
 			<div className="screen">
 				<Sidebar />
 
