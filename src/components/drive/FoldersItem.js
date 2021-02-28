@@ -6,8 +6,14 @@ import Menu from '../ui/Menu';
 function FoldersItem() {
 	const { isMenuOpen, openMenu } = useMenu(false);
 
+	const handleContextMenu = (e) => {
+		console.log(e);
+		e.preventDefault();
+		openMenu();
+	};
+
 	return (
-		<div className="folders__item">
+		<div className="folders__item" onContextMenu={handleContextMenu}>
 			<Folder size={24} color="currentColor" />
 			<span className="folders__item-text">
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit.

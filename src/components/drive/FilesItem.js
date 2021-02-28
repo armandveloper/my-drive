@@ -29,8 +29,15 @@ const renderIcon = (mimeType) => {
 function FilesItem({ file }) {
 	const { isMenuOpen, openMenu } = useMenu(false);
 	const { ext, name, mimeType } = file;
+
+	const handleContextMenu = (e) => {
+		console.log(e);
+		e.preventDefault();
+		openMenu();
+	};
+
 	return (
-		<div className="files__item">
+		<div className="files__item" onContextMenu={handleContextMenu}>
 			<div className="files__item-body">
 				<button
 					className="btn--icon btn--menu"
