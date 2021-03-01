@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/my-drive/static/css/main.8a98d6e8.chunk.css",
-    "main.js": "/my-drive/static/js/main.6fa5eeee.chunk.js",
-    "main.js.map": "/my-drive/static/js/main.6fa5eeee.chunk.js.map",
+    "main.css": "/my-drive/static/css/main.2257bb52.chunk.css",
+    "main.js": "/my-drive/static/js/main.e90568c4.chunk.js",
+    "main.js.map": "/my-drive/static/js/main.e90568c4.chunk.js.map",
     "runtime-main.js": "/my-drive/static/js/runtime-main.ca181e00.js",
     "runtime-main.js.map": "/my-drive/static/js/runtime-main.ca181e00.js.map",
-    "static/js/2.fef321d5.chunk.js": "/my-drive/static/js/2.fef321d5.chunk.js",
-    "static/js/2.fef321d5.chunk.js.map": "/my-drive/static/js/2.fef321d5.chunk.js.map",
+    "static/js/2.c2d9e302.chunk.js": "/my-drive/static/js/2.c2d9e302.chunk.js",
+    "static/js/2.c2d9e302.chunk.js.map": "/my-drive/static/js/2.c2d9e302.chunk.js.map",
     "static/js/3.06fa9273.chunk.js": "/my-drive/static/js/3.06fa9273.chunk.js",
     "static/js/3.06fa9273.chunk.js.map": "/my-drive/static/js/3.06fa9273.chunk.js.map",
     "index.html": "/my-drive/index.html",
-    "static/css/main.8a98d6e8.chunk.css.map": "/my-drive/static/css/main.8a98d6e8.chunk.css.map",
-    "static/js/2.fef321d5.chunk.js.LICENSE.txt": "/my-drive/static/js/2.fef321d5.chunk.js.LICENSE.txt"
+    "static/css/main.2257bb52.chunk.css.map": "/my-drive/static/css/main.2257bb52.chunk.css.map",
+    "static/js/2.c2d9e302.chunk.js.LICENSE.txt": "/my-drive/static/js/2.c2d9e302.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ca181e00.js",
-    "static/js/2.fef321d5.chunk.js",
-    "static/css/main.8a98d6e8.chunk.css",
-    "static/js/main.6fa5eeee.chunk.js"
+    "static/js/2.c2d9e302.chunk.js",
+    "static/css/main.2257bb52.chunk.css",
+    "static/js/main.e90568c4.chunk.js"
   ]
 }
