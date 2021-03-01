@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { File, Folder, User, Trash, UploadCloud } from 'react-feather';
+import { File, Folder, Trash, UploadCloud, Cloud } from 'react-feather';
 
 function Sidebar() {
 	return (
@@ -44,11 +44,12 @@ function Sidebar() {
 				<NavLink
 					className="sidebar__nav-item"
 					activeClassName="sidebar__nav-item--active"
-					aria-label="Search"
-					to="/profile"
+					aria-label="Storage"
+					to="/storage"
 				>
-					<User className="sidebar__icon" size={24} />
-					<span className="sidebar__nav-item-text">Profile</span>
+					<Cloud className="sidebar__icon" size={24} />
+					<span className="sidebar__nav-item-text">Storage</span>
+					<span className="tooltip">Storage</span>
 				</NavLink>
 			</nav>
 		</aside>

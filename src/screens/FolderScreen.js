@@ -70,7 +70,12 @@ function FolderScreen() {
 				</div>
 				<div className="folders__grid">
 					{folders.map((folder) => (
-						<FoldersItem key={folder.id} />
+						<FoldersItem
+							key={folder.id}
+							{...folder}
+							setFolders={setFolders}
+							openModal={openModal}
+						/>
 					))}
 				</div>
 				<Modal isOpen={modalIsOpen} setModalOpen={setModalOpen}>
@@ -84,6 +89,8 @@ function FolderScreen() {
 								className="form__control"
 								value={folder}
 								onChange={handleFolderChange}
+								autoComplete="off"
+								autoFocus={true}
 							/>
 						</div>
 						<button
@@ -95,7 +102,6 @@ function FolderScreen() {
 						</button>
 					</form>
 				</Modal>
-				;
 			</WorkSpace>
 		</ScreenHolder>
 	);

@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ScreenHolder from '../components/layout/ScreenHolder';
 import WorkSpace from '../components/WorkSpace';
 import FilesItem from '../components/drive/FilesItem';
-import files from '../files';
+import filesData from '../files';
 import { Upload } from 'react-feather';
 
 function HomeScreen() {
+	const [files, setFiles] = useState(filesData);
+
 	return (
 		<ScreenHolder title="My Files">
 			<WorkSpace>
@@ -22,7 +24,11 @@ function HomeScreen() {
 				</div>
 				<div className="files__grid">
 					{files.map((file) => (
-						<FilesItem key={file.id} file={file} />
+						<FilesItem
+							key={file.id}
+							file={file}
+							setFiles={setFiles}
+						/>
 					))}
 				</div>
 			</WorkSpace>

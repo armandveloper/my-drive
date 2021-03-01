@@ -172,6 +172,7 @@ a {
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 1000;
 }
 .modal {
 	background-color: #fff;
@@ -243,6 +244,68 @@ a {
 }
 .space-r-1 {
 	margin-right: 0.5rem;
+}
+/* Spinner */
+.spinner {
+	border: 0.5rem solid transparent;
+	border-top-color: var(--color-secondary);
+	border-radius: 50%;
+	height: 6rem;
+	width: 6rem;
+	animation: spinner 1s linear infinite;
+}
+@keyframes spinner {
+	from {
+		transform: rotate(0);
+	}
+	from {
+		transform: rotate(360deg);
+	}
+}
+.overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.snackbar {
+	border-radius: 0.4rem;
+	background-color: #121212;
+	color: #ffff;
+	font-size: 1.4rem;
+	padding: 1rem 2rem;
+	position: fixed;
+	left: 2rem;
+	bottom: 2rem;
+	z-index: 100;
+	animation: fadeIn 0.5s ease;
+}
+.snackbar.secondary {
+	background-color: var(--color-secondary);
+}
+.snackbar.error {
+	background-color: rgb(197, 15, 15);
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
 /* Layout */
 .wrapper {
@@ -352,9 +415,6 @@ body {
 	.sidebar__nav-item {
 		height: 4rem;
 		margin-bottom: 6rem;
-	}
-	.sidebar__nav-item:last-child {
-		display: none;
 	}
 	.sidebar__nav-item::before {
 		content: '';

@@ -4,6 +4,7 @@ import Sidebar from '../components/layout/Sidebar';
 import HomeScreen from '../screens/HomeScreen';
 import FolderScreen from '../screens/FolderScreen';
 import TrashScreen from '../screens/TrashScreen';
+import StorageScreen from '../screens/StorageScreen';
 
 function PrivateRouter() {
 	return (
@@ -18,6 +19,9 @@ function PrivateRouter() {
 				</Route>
 				<Route path="/trash" exact={true}>
 					<TrashScreen />
+				</Route>
+				<Route path="/storage" exact={true}>
+					<StorageScreen />
 				</Route>
 				<Redirect to="/login" />
 			</Switch>
